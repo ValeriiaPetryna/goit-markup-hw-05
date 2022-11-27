@@ -31,8 +31,8 @@
             ><span class="logo-second-part">Studio</span></a
           >
           <ul class="header-list list">
-            <li class="item">
-              <a class="header-list-link header-link link" href="./index.html"
+            <li class="item border">
+              <a class="header-list-link header-link act-stud link" href="./index.html"
                 >Студія</a
               >
             </li>
@@ -44,7 +44,7 @@
               >
             </li>
             <li class="item">
-              <a class="header-list-link header-link link" href="a">Контакти</a>
+              <a class="header-list-link header-link act-contacts link" href="a">Контакти</a>
             </li>
           </ul>
         </nav>
@@ -77,7 +77,7 @@
       <section class="hero">
         <div class="container containar-hero">
           <h1 class="hero-title">Ефективні рішення для<br />вашого бізнесу</h1>
-          <button class="main-button button" type="button">
+          <button class="main-button button" type="button" data-modal-open>
             Замовити послугу
           </button>
         </div>
@@ -458,5 +458,17 @@
         </div>
         </div>
       </footer>
+      <!-- <button data-modal-open class="main-button button" >Замовити послугу</button> -->
+      <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+<div class="close-sign" data-modal-close>
+   <svg class="icon-close" width="20" height="20" >
+    <use href="./images/icons.svg#icon-close"></use>
+    </svg>
+</div>
+   </div>
+        </div>
+      </div>
+      <script src="./js/modal.js"></script>
   </body>
 </html>
